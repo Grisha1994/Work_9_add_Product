@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    background-color:#34495E;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 25px;
+    position: relative;
+    
+}
+
+.card:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.delete_btn {
+    display: none;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FC7171;
+    cursor: pointer;
+}
+
+.card:hover .delete_btn{
+    display: block;
+}
