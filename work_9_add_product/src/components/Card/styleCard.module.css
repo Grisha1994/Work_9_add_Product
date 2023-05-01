@@ -10,6 +10,34 @@
     
 }
 
+.price{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.price button{
+    display: none;
+}
+
+.price :nth-child(2){
+    display: none;
+}
+
+.card:hover button, .delete_btn{
+    display: block;
+}
+
+.card:hover :nth-child(2){
+    display: block;
+    display: flex; 
+}
+
+.card button{
+    width: 30px;
+    height: 30px;
+}
+
 .card:not(:last-child) {
     margin-bottom: 30px;
 }
@@ -26,6 +54,3 @@
     cursor: pointer;
 }
 
-.card:hover .delete_btn{
-    display: block;
-}

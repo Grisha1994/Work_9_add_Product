@@ -6,10 +6,11 @@ export default function AddCardForm({addCard}) {
     const onSubmit = (event) =>{
         event.preventDefault();
 
-        const {name, price} = event.target;
-
+        const {name, price, count = 0} = event.target;
+        
         const newProduct = {           
             name: name.value, 
+            count: count,
             price: price.value,
             id: Date.now()
         }
